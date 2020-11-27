@@ -260,8 +260,6 @@ def show_possible_matches(my_word):
         print('Possible word matches are:',l)
     return ''
 
-print(show_possible_matches("a_ _ le"))
-
 def hangman_with_hints(secret_word):
     '''
     secret_word: string, the secret word to guess.
@@ -378,6 +376,5 @@ if __name__ == "__main__":
     # To test part 3 re-comment out the above lines and 
     # uncomment the following two lines. 
     
-    #secret_word = choose_word(wordlist)
-    secret_word="apple"
+    secret_word = choose_word(wordlist)
     hangman_with_hints(secret_word)
